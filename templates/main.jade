@@ -1,0 +1,25 @@
+-function prettyDate(dateString){
+	//if it's already a date object and not a string you don't need this line:
+	-var date = new Date(dateString);
+	-var d = date.getDate();
+	-var monthNames = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun","Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ];
+	-var m = monthNames[date.getMonth()];
+	-var y = date.getFullYear();
+	-var h = date.getHours();
+	-var min = date.getMinutes();
+	-return d+' '+m+' '+y+' '+h+':'+min;
+-}
+
+table
+	if previousURL
+		tr
+			td
+				a(href='#{previousURL}') ..
+			td
+	for file in files
+		if file.name.indexOf('.') !== 0
+			tr
+				td
+					a(href='#{file.path}'+'/'+'#{file.name}') #{file.name}
+				td
+					p #{prettyDate(file.stat.mtime)}
