@@ -7,7 +7,7 @@ var express = require('express'),
 
 
 // var directory = path.join(__dirname, '_public')
-var directory = "/Users"
+var directory = "./_public"
 var files;
 
 
