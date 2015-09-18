@@ -10,4 +10,4 @@ Looking to implement user management to set permissions. As well implementation 
 1. `npm install app.js`
 2. Set the directory to read from in the `app.js` file. Default: `./_public`
 3. `node app.js`
-4. Open browser at `localhost:3030` or `Â127.0.0.1:3030`
+4. Open browser at `localhost:3030` or `127.0.0.1:3030`
